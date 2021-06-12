@@ -1,0 +1,1 @@
+Slimbox: hitbox-layout low profile fightstick by jfedor on Thingiverse: https://www.thingiverse.com/thing:4880590
