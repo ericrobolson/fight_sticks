@@ -11,4 +11,4 @@ dim_box_depth = 18;
 dim_wall_thickness = 6;
 dim_base_thickness = 4;
 dim_cord_cutout_diameter = 6;
-dim_screw_diameter = 2.2;
+dim_screw_diameter = 2;
