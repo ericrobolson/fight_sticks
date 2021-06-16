@@ -37,7 +37,3 @@ module top(
         );
     }
 }
-
-
-// TODO: this can probably be changed
-top();
