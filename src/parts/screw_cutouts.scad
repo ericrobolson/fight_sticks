@@ -11,18 +11,12 @@ module screw(
 }
 
 /// Creates screws/screw holders for a fight stick.
-module screws(is_holder = false, corner_length = 10, box_width = 220, box_height = 140, screw_diameter=5, holder_thickness=2, screw_height=200) {
+module screws(is_holder = false, corner_length = 10, box_width = 220, box_height = 140, screw_diameter=5, holder_thickness=6, screw_height=200) {
     module corner() {
-        points = [
-            [0,0],
-            [0,corner_length],
-            [corner_length,corner_length],
-        ];
-
         diameter = is_holder ? screw_diameter + holder_thickness : screw_diameter;
-        
-
-        translate([-corner_length / 2 - screw_diameter - holder_thickness, corner_length / 2 + screw_diameter + holder_thickness,0])
+        x_offset =  screw_diameter + holder_thickness;
+        y_offset =  screw_diameter + holder_thickness;
+        translate([x_offset, y_offset,0])
         screw(diameter);
     }
 
@@ -34,8 +28,6 @@ module screws(is_holder = false, corner_length = 10, box_width = 220, box_height
 
         // Connector
         connector_width = box_width - 1 * corner_length;
-
-
 
         // Corner 2
         translate([box_width / 2, 0,0])
